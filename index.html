@@ -9,7 +9,7 @@
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
         .hero-section {
-            background-color: #87CEEB;
+            background-color: #d2b48c; /* 갈색톤 배경색 */
             color: white;
             text-align: center;
             padding: 100px 0;
@@ -32,6 +32,17 @@
         .yorkshire-terrier img {
             width: 300px;
             margin: 0 10px;
+            transition: transform 0.3s ease;
+            cursor: pointer; /* 이미지에 포인터 커서 효과를 주기 위해 */
+        }
+
+        .yorkshire-terrier img:hover {
+            transform: scale(1.1);
+        }
+
+        .image-description {
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -44,9 +55,24 @@
 </section>
 <div class="container">
     <div class="yorkshire-terrier">
-        <img src="path_to_your_image/yorkshire_terrier_1.jpg" alt="yorkshire terrier 1">
-        <img src="path_to_your_image/yorkshire_terrier_2.jpg" alt="yorkshire terrier 2">
-        <img src="path_to_your_image/yorkshire_terrier_3.jpg" alt="yorkshire terrier 3">
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Yorkshire_Terrier" target="_blank">
+                <img src="./yorkshire_terrier_1.jpg" alt="yorkshire terrier 1">
+            </a>
+            <div class="image-description">물은 요롷게 마시는 거라네~</div>
+        </div>
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Yorkshire_Terrier" target="_blank">
+                <img src="./yorkshire_terrier_2.jpg" alt="yorkshire terrier 2">
+            </a>
+            <div class="image-description">지구 제일 얼짱!</div>
+        </div>
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Yorkshire_Terrier" target="_blank">
+                <img src="./yorkshire_terrier_3.jpg" alt="yorkshire terrier 3">
+            </a>
+            <div class="image-description">코낸내 잠자요~</div>
+        </div>
     </div>
 </div>
 </body>
